@@ -1,0 +1,13 @@
+<script>
+
+function changeImage() {
+   
+    const image = document.getElementById('image');
+    
+    const timestamp = new Date().getTime();
+    const newImageUrl = `api/randomimg?t=${timestamp}`;
+
+    
+    image.src = newImageUrl;
+}
+</script>
